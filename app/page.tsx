@@ -121,7 +121,7 @@ export default function Home() {
                 <button
                   className="text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:brightness-110"
                   style={{
-                    background: "linear-gradient(to right, #198450, #15704a)",
+                    background: "linear-gradient(to right, #2D6E89, #245566)",
                   }}
                 >
                   View All Packages
@@ -145,7 +145,7 @@ export default function Home() {
           className="py-20 text-white"
           style={{
             background:
-              "linear-gradient(135deg, #198450 0%, #15704a 50%, #0f5e3e 100%)",
+              "linear-gradient(135deg, #2D6E89 0%, #245566 50%, #1e4654 100%)",
           }}
         >
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -160,14 +160,14 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button
                 className="bg-white text-cyan-600 hover:bg-slate-100 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
-                style={{ color: "#198450" }}
+                style={{ color: "#2D6E89" }}
               >
                 Get Free Consultation
               </button>
               <button
                 className="border-2 border-white text-white hover:bg-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300"
                 style={
-                  { "--hover-text-color": "#198450" } as React.CSSProperties
+                  { "--hover-text-color": "#2D6E89" } as React.CSSProperties
                 }
               >
                 Call +977-1-4123456

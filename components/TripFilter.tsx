@@ -82,7 +82,7 @@ const TripFilter = () => {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="lg:hidden text-white px-4 py-2.5 rounded-lg font-semibold flex items-center gap-2 w-full sm:w-auto justify-center transition-colors hover:brightness-110"
-              style={{ background: "#198450" }}
+              style={{ background: "#2D6E89" }}
             >
               <span>Filter Options</span>
               <svg
@@ -121,8 +121,8 @@ const TripFilter = () => {
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent transition-all"
                 style={
                   {
-                    "--focus-ring-color": "#198450",
-                    focusRingColor: "#198450",
+                    "--focus-ring-color": "#2D6E89",
+                    focusRingColor: "#2D6E89",
                   } as React.CSSProperties
                 }
               >
@@ -207,7 +207,7 @@ const TripFilter = () => {
                 onClick={handleSearch}
                 className="w-full text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2 hover:brightness-110"
                 style={{
-                  background: "linear-gradient(to right, #198450, #15704a)",
+                  background: "linear-gradient(to right, #2D6E89, #245566)",
                 }}
               >
                 <svg
@@ -244,7 +244,7 @@ const TripFilter = () => {
                   key={filter}
                   className="px-4 py-2 bg-slate-100 hover:bg-cyan-100 text-slate-700 hover:text-cyan-700 rounded-full text-sm font-medium transition-all duration-200"
                   style={
-                    { "--hover-text-color": "#198450" } as React.CSSProperties
+                    { "--hover-text-color": "#2D6E89" } as React.CSSProperties
                   }
                 >
                   {filter}

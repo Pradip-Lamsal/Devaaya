@@ -26,7 +26,7 @@ const Header = () => {
               </h1>
               <p
                 className="text-xs text-cyan-600 font-medium -mt-1 tracking-wider"
-                style={{ color: "#198450" }}
+                style={{ color: "#2D6E89" }}
               >
                 HOLIDAYS
               </p>
