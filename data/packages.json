@@ -1,0 +1,504 @@
+{
+  "packages": {
+    "1": {
+      "id": 1,
+      "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&h=800&fit=crop",
+      "destination": "Dubai, UAE",
+      "title": "Dubai Luxury Experience",
+      "duration": "5 Days, 4 Nights",
+      "price": 1850,
+      "originalPrice": 2200,
+      "rating": 4.9,
+      "reviews": 124,
+      "badge": "Best Seller",
+      "gallery": [
+        "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1546412414-e5e2e2c8d7d7?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?w=800&h=600&fit=crop"
+      ],
+      "description": "Experience the opulence of Dubai with our comprehensive luxury package. From the world's tallest building to pristine beaches, Dubai offers an unmatched blend of modern marvels and traditional Arabian hospitality.",
+      "highlights": [
+        "Burj Khalifa & Dubai Mall visit",
+        "Desert Safari with BBQ dinner",
+        "5-star hotel accommodation",
+        "Dubai Marina dhow cruise",
+        "Visit to Gold & Spice Souks",
+        "Professional tour guide",
+        "All transfers included"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival & Dubai Mall",
+          "activities": [
+            "Airport pickup",
+            "Hotel check-in",
+            "Visit Burj Khalifa",
+            "Dubai Mall exploration",
+            "Dubai Fountain show"
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Modern Dubai Tour",
+          "activities": [
+            "Dubai Marina visit",
+            "Palm Jumeirah tour",
+            "Atlantis Hotel visit",
+            "Beach time at JBR",
+            "Dubai Tram ride"
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Traditional Dubai",
+          "activities": [
+            "Dubai Creek tour",
+            "Gold & Spice Souks",
+            "Al Fahidi Historic District",
+            "Dubai Museum",
+            "Traditional dinner"
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Desert Adventure",
+          "activities": [
+            "Desert Safari",
+            "Camel riding",
+            "Sand boarding",
+            "BBQ dinner",
+            "Traditional entertainment"
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Departure",
+          "activities": [
+            "Leisure morning",
+            "Last-minute shopping",
+            "Hotel checkout",
+            "Airport transfer",
+            "Departure"
+          ]
+        }
+      ],
+      "includes": [
+        "5-star hotel accommodation",
+        "Daily breakfast",
+        "Airport transfers",
+        "All tours and activities mentioned",
+        "Professional English-speaking guide",
+        "Entry tickets to attractions",
+        "Desert Safari with dinner"
+      ],
+      "excludes": [
+        "International flights",
+        "Personal expenses",
+        "Meals not mentioned",
+        "Optional activities",
+        "Travel insurance",
+        "Visa fees"
+      ],
+      "bookingInfo": {
+        "availability": "Daily departures available",
+        "minPax": 2,
+        "maxPax": 15,
+        "advanceBooking": "7 days minimum",
+        "cancellation": "Free cancellation up to 24 hours before departure"
+      }
+    },
+    "2": {
+      "id": 2,
+      "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=1200&h=800&fit=crop",
+      "destination": "Maldives",
+      "title": "Maldives Honeymoon Paradise",
+      "duration": "6 Days, 5 Nights",
+      "price": 2850,
+      "originalPrice": 3200,
+      "rating": 5.0,
+      "reviews": 89,
+      "badge": "Romantic",
+      "gallery": [
+        "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1590523278191-995cbcda646b?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1571501679680-de32f1e7aad4?w=800&h=600&fit=crop"
+      ],
+      "description": "Escape to paradise with your loved one in the Maldives. Crystal clear waters, pristine beaches, and luxurious overwater villas create the perfect setting for an unforgettable romantic getaway.",
+      "highlights": [
+        "Overwater villa with private pool",
+        "Underwater restaurant dining",
+        "Seaplane transfers included",
+        "Couples spa treatment",
+        "Sunset dolphin cruise",
+        "Private beach dinner",
+        "Snorkeling equipment provided"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Paradise",
+          "activities": [
+            "Seaplane transfer",
+            "Villa check-in",
+            "Welcome cocktails",
+            "Resort tour",
+            "Romantic sunset viewing"
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Water Adventures",
+          "activities": [
+            "Snorkeling excursion",
+            "Dolphin watching",
+            "Water sports",
+            "Couples spa treatment",
+            "Beachside lunch"
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Island Exploration",
+          "activities": [
+            "Local island visit",
+            "Cultural experience",
+            "Fishing trip",
+            "Private beach picnic",
+            "Stargazing"
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Underwater Wonders",
+          "activities": [
+            "Underwater restaurant",
+            "Diving experience",
+            "Marine life encounter",
+            "Photography session",
+            "Sunset cruise"
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Relaxation Day",
+          "activities": [
+            "Villa breakfast",
+            "Pool relaxation",
+            "Beach activities",
+            "Couples massage",
+            "Farewell dinner"
+          ]
+        },
+        {
+          "day": 6,
+          "title": "Departure",
+          "activities": [
+            "Final breakfast",
+            "Souvenir shopping",
+            "Villa checkout",
+            "Seaplane transfer",
+            "Departure"
+          ]
+        }
+      ],
+      "includes": [
+        "Overwater villa accommodation",
+        "All meals (breakfast, lunch, dinner)",
+        "Seaplane transfers",
+        "Airport transfers in Male",
+        "All water sports equipment",
+        "Couples spa treatment",
+        "Sunset cruise"
+      ],
+      "excludes": [
+        "International flights",
+        "Alcoholic beverages",
+        "Personal expenses",
+        "Optional diving courses",
+        "Travel insurance",
+        "Visa fees"
+      ],
+      "bookingInfo": {
+        "availability": "Year-round availability",
+        "minPax": 2,
+        "maxPax": 2,
+        "advanceBooking": "14 days minimum",
+        "cancellation": "Free cancellation up to 48 hours before departure"
+      }
+    },
+    "3": {
+      "id": 3,
+      "image": "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=1200&h=800&fit=crop",
+      "destination": "Istanbul, Turkey",
+      "title": "Turkey Cultural Discovery",
+      "duration": "8 Days, 7 Nights",
+      "price": 1650,
+      "originalPrice": null,
+      "rating": 4.8,
+      "reviews": 76,
+      "badge": null,
+      "gallery": [
+        "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1560709499-0c3023fbc5b6?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&h=600&fit=crop"
+      ],
+      "description": "Discover the rich cultural heritage of Turkey, where East meets West. From the magnificent Hagia Sophia to the otherworldly landscapes of Cappadocia, experience the magic of Turkish history and hospitality.",
+      "highlights": [
+        "Hagia Sophia & Blue Mosque tours",
+        "Bosphorus cruise experience",
+        "Cappadocia hot air balloon",
+        "Turkish cuisine cooking class",
+        "Topkapi Palace visit",
+        "Grand Bazaar shopping",
+        "Traditional Turkish bath"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Istanbul Arrival",
+          "activities": [
+            "Airport pickup",
+            "Hotel check-in",
+            "Sultanahmet area walk",
+            "Welcome dinner",
+            "Traditional music show"
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Historic Istanbul",
+          "activities": [
+            "Hagia Sophia tour",
+            "Blue Mosque visit",
+            "Topkapi Palace",
+            "Basilica Cistern",
+            "Grand Bazaar shopping"
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Bosphorus & Modern Istanbul",
+          "activities": [
+            "Bosphorus cruise",
+            "Dolmabahce Palace",
+            "Galata Tower",
+            "Taksim Square",
+            "Turkish cooking class"
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Flight to Cappadocia",
+          "activities": [
+            "Morning flight",
+            "Goreme Open Air Museum",
+            "Pasabag Valley",
+            "Pottery workshop",
+            "Cave hotel check-in"
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Cappadocia Adventure",
+          "activities": [
+            "Hot air balloon ride",
+            "Underground city tour",
+            "Love Valley hike",
+            "Traditional lunch",
+            "Sunset viewing"
+          ]
+        },
+        {
+          "day": 6,
+          "title": "Return to Istanbul",
+          "activities": [
+            "Morning exploration",
+            "Flight to Istanbul",
+            "Spice Bazaar visit",
+            "Turkish bath experience",
+            "Farewell dinner"
+          ]
+        },
+        {
+          "day": 7,
+          "title": "Free Day",
+          "activities": [
+            "Leisure morning",
+            "Optional tours",
+            "Last-minute shopping",
+            "Relaxation",
+            "Packing"
+          ]
+        },
+        {
+          "day": 8,
+          "title": "Departure",
+          "activities": [
+            "Hotel checkout",
+            "Airport transfer",
+            "Departure"
+          ]
+        }
+      ],
+      "includes": [
+        "4-star hotel accommodation",
+        "Daily breakfast",
+        "Domestic flights",
+        "All transfers",
+        "Professional guide",
+        "Entry fees to attractions",
+        "Turkish cooking class"
+      ],
+      "excludes": [
+        "International flights",
+        "Lunches and dinners (except mentioned)",
+        "Personal expenses",
+        "Optional activities",
+        "Travel insurance",
+        "Visa fees"
+      ],
+      "bookingInfo": {
+        "availability": "March to November",
+        "minPax": 4,
+        "maxPax": 20,
+        "advanceBooking": "10 days minimum",
+        "cancellation": "Free cancellation up to 72 hours before departure"
+      }
+    },
+    "4": {
+      "id": 4,
+      "image": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1200&h=800&fit=crop",
+      "destination": "Bangkok, Thailand",
+      "title": "Thailand Adventure Package",
+      "duration": "7 Days, 6 Nights",
+      "price": 1250,
+      "originalPrice": 1450,
+      "rating": 4.7,
+      "reviews": 143,
+      "badge": "Adventure",
+      "gallery": [
+        "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1552550049-db5c2c3a5ccd?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=800&h=600&fit=crop"
+      ],
+      "description": "Embark on an exciting journey through Thailand's most captivating destinations. From bustling Bangkok temples to pristine Phuket beaches, experience the perfect blend of culture, adventure, and relaxation.",
+      "highlights": [
+        "Bangkok temple tours",
+        "Phuket beach relaxation",
+        "Thai cooking class",
+        "Phi Phi Islands day trip",
+        "Floating market visit",
+        "Traditional Thai massage",
+        "Elephant sanctuary visit"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Bangkok Arrival",
+          "activities": [
+            "Airport pickup",
+            "Hotel check-in",
+            "Wat Pho temple visit",
+            "Traditional Thai dinner",
+            "Tuk-tuk city tour"
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Bangkok Exploration",
+          "activities": [
+            "Grand Palace tour",
+            "Wat Arun temple",
+            "Floating market",
+            "Thai cooking class",
+            "Chao Phraya river cruise"
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Bangkok to Phuket",
+          "activities": [
+            "Morning flight",
+            "Phuket hotel check-in",
+            "Patong Beach",
+            "Beach activities",
+            "Sunset viewing"
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Phi Phi Islands",
+          "activities": [
+            "Early boat departure",
+            "Maya Bay visit",
+            "Snorkeling",
+            "Beach lunch",
+            "Island hopping",
+            "Return to Phuket"
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Phuket Adventures",
+          "activities": [
+            "Elephant sanctuary",
+            "Big Buddha visit",
+            "Old Town Phuket",
+            "Local market tour",
+            "Thai massage"
+          ]
+        },
+        {
+          "day": 6,
+          "title": "Beach Relaxation",
+          "activities": [
+            "Free beach day",
+            "Water sports",
+            "Shopping",
+            "Farewell dinner",
+            "Traditional dance show"
+          ]
+        },
+        {
+          "day": 7,
+          "title": "Departure",
+          "activities": [
+            "Hotel checkout",
+            "Last-minute shopping",
+            "Airport transfer",
+            "Departure"
+          ]
+        }
+      ],
+      "includes": [
+        "3-star hotel accommodation",
+        "Daily breakfast",
+        "Domestic flights",
+        "All transfers",
+        "Phi Phi Islands day trip",
+        "Thai cooking class",
+        "Temple entrance fees"
+      ],
+      "excludes": [
+        "International flights",
+        "Lunches and dinners (except mentioned)",
+        "Personal expenses",
+        "Optional activities",
+        "Travel insurance",
+        "Visa fees"
+      ],
+      "bookingInfo": {
+        "availability": "Year-round availability",
+        "minPax": 2,
+        "maxPax": 16,
+        "advanceBooking": "5 days minimum",
+        "cancellation": "Free cancellation up to 24 hours before departure"
+      }
+    }
+  }
+}

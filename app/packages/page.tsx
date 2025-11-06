@@ -1,7 +1,7 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import PackageCard from "@/components/PackageCard";
-import TripFilter from "@/components/TripFilter";
+import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
+import PackageCard from "@/components/packages/PackageCard";
+import TripFilter from "@/components/ui/TripFilter";
 
 // All available packages
 const allPackages = [
