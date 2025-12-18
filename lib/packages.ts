@@ -2,14 +2,14 @@
  * Utility functions for package data management
  */
 
-import packagesData from "@/data/packages.json";
+import packagesData from "@/data/packages.json" assert { type: "json" };
 import { PackagesData, TravelPackage } from "@/types/package";
 
 /**
  * Get all packages
  */
 export function getAllPackages(): TravelPackage[] {
-  const data = packagesData as PackagesData;
+  const data = packagesData as unknown as PackagesData;
   return Object.values(data.packages);
 }
 

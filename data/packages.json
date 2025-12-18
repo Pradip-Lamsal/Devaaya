@@ -533,25 +533,48 @@
         {
           "day": 1,
           "title": "Arrival & Old City Exploration",
-          "description": "Arrive at Heydar Aliyev International Airport and transfer to your 4-star hotel. After check-in, explore the enchanting Old City (Icherisheher) - a UNESCO World Heritage Site dating back to the 12th century. Enjoy traditional Azerbaijani dinner at a local restaurant."
+          "activities": [
+            "Airport pickup",
+            "Hotel check-in",
+            "Explore Old City (Icherisheher)",
+            "Traditional Azerbaijani dinner"
+          ]
         },
         {
           "day": 2,
           "title": "Modern Baku & Flame Towers",
-          "description": "Visit the iconic Flame Towers, Heydar Aliyev Center, and Crystal Hall. Explore the upscale Baku Boulevard along the Caspian Sea with panoramic views. Visit local bazaars for traditional crafts and souvenirs."
+          "activities": [
+            "Visit Flame Towers",
+            "Heydar Aliyev Center tour",
+            "Baku Boulevard exploration",
+            "Local bazaar visits",
+            "Souvenir shopping"
+          ]
         },
         {
           "day": 3,
           "title": "Natural Wonders & Yanar Dag",
-          "description": "Day trip to Yanar Dag (Fire Mountain) - a hillside perpetually covered with natural gas fires. Visit Absheron Peninsula, mud volcanoes, and pristine beaches. Experience the unique natural phenomenon and local culture."
+          "activities": [
+            "Day trip to Yanar Dag",
+            "Absheron Peninsula visit",
+            "Mud volcano experience",
+            "Beach time",
+            "Local culture interaction"
+          ]
         },
         {
           "day": 4,
           "title": "Shopping & Departure",
-          "description": "Visit local markets and shopping centers for last-minute purchases. Enjoy a farewell meal with city views. Transfer to airport for departure."
+          "activities": [
+            "Visit local markets",
+            "Last-minute shopping",
+            "Farewell meal",
+            "Hotel checkout",
+            "Airport transfer"
+          ]
         }
       ],
-      "inclusions": [
+      "includes": [
         "3 nights 4-star hotel accommodation",
         "Daily breakfast & dinners",
         "Professional tour guide (English speaking)",
@@ -561,7 +584,7 @@
         "Monument entry fees",
         "Welcome drink on arrival"
       ],
-      "exclusions": [
+      "excludes": [
         "International flights",
         "Visa fees",
         "Travel insurance",
@@ -611,50 +634,99 @@
         {
           "day": 1,
           "title": "Arrival & Hotel Check-in",
-          "description": "Arrive at international airport in USA and transfer to your 5-star hotel located near one of the World Cup 2026 stadiums. Settle in and receive match tickets and tournament schedule briefing."
+          "activities": [
+            "Airport arrival & pickup",
+            "Hotel check-in near stadium",
+            "Match tickets briefing",
+            "Tournament schedule review",
+            "Welcome dinner"
+          ]
         },
         {
           "day": 2,
           "title": "First World Cup Match & City Tour",
-          "description": "Attend your first premium World Cup match in the evening. Before the match, enjoy a guided city tour of the stadium city with local attractions. Experience the electric atmosphere!"
+          "activities": [
+            "City tour of stadium city",
+            "Visit local attractions",
+            "Attend premium match evening",
+            "Experience electric atmosphere"
+          ]
         },
         {
           "day": 3,
           "title": "Rest Day & Entertainment",
-          "description": "Relax or explore the city. Visit local restaurants, shopping centers, and attractions. Evening entertainment and team analysis session with football experts."
+          "activities": [
+            "Explore the city",
+            "Visit local restaurants",
+            "Shopping centers visit",
+            "Evening entertainment session",
+            "Team analysis discussion"
+          ]
         },
         {
           "day": 4,
           "title": "Second World Cup Match",
-          "description": "Attend your second premium World Cup match. Enjoy pre-match entertainment, VIP lounge access, and premium seating experience."
+          "activities": [
+            "Pre-match entertainment",
+            "VIP lounge access",
+            "Premium match attendance",
+            "Post-match celebrations"
+          ]
         },
         {
           "day": 5,
           "title": "Stadium Tour & Third Match",
-          "description": "Morning tour of one of the World Cup stadiums (behind-the-scenes). Afternoon rest and preparation. Evening attendance at third premium World Cup match."
+          "activities": [
+            "Behind-the-scenes stadium tour",
+            "Afternoon rest & preparation",
+            "Attend third match evening",
+            "Premium seating experience"
+          ]
         },
         {
           "day": 6,
           "title": "Inter-stadium Travel & Exploration",
-          "description": "Travel to another stadium city by private coach. Check into your second 5-star hotel near this stadium. Evening city exploration and dinner."
+          "activities": [
+            "Travel by private coach",
+            "Check into second hotel",
+            "City exploration",
+            "Dinner at new location"
+          ]
         },
         {
           "day": 7,
           "title": "Additional Match Experience",
-          "description": "Attend another exciting World Cup match. Explore the new city and interact with football fans from around the world."
+          "activities": [
+            "Attend exciting match",
+            "Explore new city",
+            "Interact with global fans",
+            "Local restaurant experience"
+          ]
         },
         {
           "day": 8,
           "title": "Cultural & Entertainment Day",
-          "description": "Day tour of local attractions, museums, and cultural sites. Evening entertainment, sports bar experience, and match analysis."
+          "activities": [
+            "Visit local museums",
+            "Cultural site tours",
+            "Sports bar experience",
+            "Match analysis session",
+            "Evening entertainment"
+          ]
         },
         {
           "day": 9,
           "title": "Farewell & Departure",
-          "description": "Final shopping and leisure time. Attend farewell dinner celebrating World Cup memories. Late-night transfer to airport for departure."
+          "activities": [
+            "Final shopping",
+            "Farewell dinner",
+            "World Cup memory celebration",
+            "Hotel checkout",
+            "Airport transfer"
+          ]
         }
       ],
-      "inclusions": [
+      "includes": [
         "9 nights 5-star hotel near stadiums",
         "3 Premium World Cup Match Tickets",
         "Daily buffet breakfast & dinners",
@@ -668,7 +740,7 @@
         "Travel insurance coverage",
         "World Cup merchandise"
       ],
-      "exclusions": [
+      "excludes": [
         "International flights from Nepal",
         "Visa processing fees",
         "Additional match tickets",
