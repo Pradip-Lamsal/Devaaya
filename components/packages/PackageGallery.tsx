@@ -11,76 +11,11 @@ import {
   XIcon,
 } from "@/components/ui/Icons";
 import { TravelPackage } from "@/types/package";
-import Image from "next/image";
 import { useState } from "react";
 
 interface PackageGalleryProps {
   package: TravelPackage;
 }
-
-interface LightboxProps {
-  images: string[];
-  currentIndex: number;
-  isOpen: boolean;
-  onClose: () => void;
-  onPrevious: () => void;
-  onNext: () => void;
-}
-
-const Lightbox = ({
-  images,
-  currentIndex,
-  isOpen,
-  onClose,
-  onPrevious,
-  onNext,
-}: LightboxProps) => {
-  if (!isOpen) return null;
-
-  return (
-    <div className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center">
-      {/* Close Button */}
-      <button
-        onClick={onClose}
-        className="absolute top-4 right-4 text-white p-3 rounded-full bg-black bg-opacity-75 hover:bg-opacity-90 transition-all duration-200 z-10 border border-white/20"
-      >
-        <XIcon className="w-6 h-6" />
-      </button>
-
-      {/* Previous Button */}
-      <button
-        onClick={onPrevious}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white p-3 rounded-full bg-black bg-opacity-75 hover:bg-opacity-90 transition-all duration-200 z-10 border border-white/20"
-      >
-        <ChevronLeftIcon className="w-6 h-6" />
-      </button>
-
-      {/* Next Button */}
-      <button
-        onClick={onNext}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white p-3 rounded-full bg-black bg-opacity-75 hover:bg-opacity-90 transition-all duration-200 z-10 border border-white/20"
-      >
-        <ChevronRightIcon className="w-6 h-6" />
-      </button>
-
-      {/* Main Image */}
-      <div className="relative max-w-7xl max-h-[90vh] w-full h-full flex items-center justify-center p-4">
-        <Image
-          src={images[currentIndex]}
-          alt={`Gallery image ${currentIndex + 1}`}
-          fill
-          className="object-contain"
-          sizes="100vw"
-        />
-      </div>
-
-      {/* Image Counter */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-black bg-opacity-75 px-4 py-2 rounded-full font-semibold border border-white/20">
-        {currentIndex + 1} / {images.length}
-      </div>
-    </div>
-  );
-};
 
 export default function PackageGallery({ package: pkg }: PackageGalleryProps) {
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -118,12 +53,11 @@ export default function PackageGallery({ package: pkg }: PackageGalleryProps) {
               className="relative aspect-square overflow-hidden rounded-lg cursor-pointer group"
               onClick={() => openLightbox(index)}
             >
-              <Image
+              <img
                 src={image}
                 alt={`${pkg.title} - Photo ${index + 1}`}
-                fill
-                className="object-cover transition-transform duration-300 group-hover:scale-110"
-                sizes="(max-width: 768px) 50vw, 25vw"
+                loading={index === 0 ? "eager" : "lazy"}
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
 
               {/* Hover Overlay */}
@@ -159,15 +93,64 @@ export default function PackageGallery({ package: pkg }: PackageGalleryProps) {
         </div>
       </div>
 
-      {/* Lightbox */}
-      <Lightbox
-        images={pkg.gallery}
-        currentIndex={lightboxIndex}
-        isOpen={lightboxOpen}
-        onClose={closeLightbox}
-        onNext={nextImage}
-        onPrevious={previousImage}
-      />
+      {/* Lightbox Modal */}
+      {lightboxOpen && (
+        <div
+          className="fixed inset-0 z-50 bg-black bg-opacity-95 flex items-center justify-center"
+          onClick={closeLightbox}
+        >
+          {/* Close Button */}
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              closeLightbox();
+            }}
+            className="absolute top-4 right-4 text-white p-3 rounded-full bg-white bg-opacity-20 hover:bg-opacity-30 transition-all duration-200 z-10 border border-white/30"
+          >
+            <XIcon className="w-6 h-6" />
+          </button>
+
+          {/* Previous Button */}
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              previousImage();
+            }}
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white p-3 rounded-full bg-white bg-opacity-20 hover:bg-opacity-30 transition-all duration-200 z-10 border border-white/30"
+          >
+            <ChevronLeftIcon className="w-6 h-6" />
+          </button>
+
+          {/* Main Image Container */}
+          <div
+            className="relative w-full h-full max-h-[90vh] flex items-center justify-center p-4"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img
+              src={pkg.gallery[lightboxIndex]}
+              alt={`Gallery image ${lightboxIndex + 1}`}
+              className="max-w-full max-h-[90vh] object-contain"
+              key={lightboxIndex}
+            />
+          </div>
+
+          {/* Next Button */}
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              nextImage();
+            }}
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white p-3 rounded-full bg-white bg-opacity-20 hover:bg-opacity-30 transition-all duration-200 z-10 border border-white/30"
+          >
+            <ChevronRightIcon className="w-6 h-6" />
+          </button>
+
+          {/* Image Counter */}
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-black bg-opacity-75 px-4 py-2 rounded-full font-semibold border border-white/20">
+            {lightboxIndex + 1} / {pkg.gallery.length}
+          </div>
+        </div>
+      )}
     </>
   );
 }

@@ -502,7 +502,7 @@
     },
     "13": {
       "id": 13,
-      "image": "/baku-azerbaijan.jpg",
+      "image": "/baku5.jpg",
       "destination": "Baku, Azerbaijan",
       "title": "Baku City Explorer Package",
       "duration": "4 Days, 3 Nights",
@@ -513,10 +513,11 @@
       "badge": "New Destination",
       "currency": "Rs.",
       "gallery": [
-        "/baku-azerbaijan.jpg",
-        "https://images.unsplash.com/photo-1578926314433-b374bda8a7e4?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1585859158688-64ba9d0c9f1e?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1583797014793-53fae2cb7a0f?w=800&h=600&fit=crop"
+        "/baku1.jpg",
+        "/baku2.jpg",
+        "/baku3.jpg",
+        "/baku4.jpg",
+        "/baku5.jpg"
       ],
       "description": "Explore the vibrant capital of Azerbaijan - Baku! Experience a perfect blend of ancient heritage, modern architecture, and Caspian Sea beauty. From the UNESCO-listed Old City to the futuristic Flame Towers, Baku offers an unforgettable journey.",
       "highlights": [
@@ -603,7 +604,7 @@
     },
     "14": {
       "id": 14,
-      "image": "/cricket-world-cup-2026.svg",
+      "image": "/cricket1.jpg",
       "destination": "India (Cricket World Cup 2026)",
       "title": "ICC Cricket World Cup 2026 Ultimate Experience",
       "duration": "12 Days, 11 Nights",
@@ -614,10 +615,11 @@
       "badge": "Mega Event",
       "currency": "Rs.",
       "gallery": [
-        "/cricket-world-cup-2026.svg",
-        "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1624526267942-ab7cb9ae2e68?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1540747913ee8a319fd92362f29352ebf?w=800&h=600&fit=crop"
+        "/cricket1.jpg",
+        "/cricket2.jpg",
+        "/cricket3.jpg",
+        "/cricket4.jpg",
+        "/cricket5.jpg"
       ],
       "description": "Experience cricket's greatest spectacle! Watch the ICC Men's Cricket World Cup 2026 in India with premium seating, stay in luxury hotels near stadiums, and witness the finals at the iconic Narendra Modi Stadium in Ahmedabad. This is a once-in-a-lifetime opportunity to be part of cricket history.",
       "highlights": [

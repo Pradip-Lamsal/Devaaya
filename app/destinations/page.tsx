@@ -10,7 +10,8 @@ const destinations = [
   {
     id: "dubai",
     name: "Dubai, UAE",
-    image: "/dubai-luxury.jpg",
+    image:
+      "https://images.unsplash.com/photo-1512453941012-c82a02ba1903?w=800&h=600&fit=crop",
     description:
       "Experience luxury, adventure, and culture in the city of gold",
     packages: 12,
@@ -26,7 +27,8 @@ const destinations = [
   {
     id: "maldives",
     name: "Maldives",
-    image: "/maldives-paradise.jpg",
+    image:
+      "https://images.unsplash.com/photo-1514282401471-a975e89986d8?w=800&h=600&fit=crop",
     description: "Pristine beaches, overwater villas, and crystal clear waters",
     packages: 8,
     startingPrice: 2850,
@@ -41,7 +43,8 @@ const destinations = [
   {
     id: "turkey",
     name: "Istanbul, Turkey",
-    image: "/istanbul-heritage.jpg",
+    image:
+      "https://images.unsplash.com/photo-1548640552-b8215b1c798f?w=800&h=600&fit=crop",
     description: "Where Europe meets Asia - rich history and vibrant culture",
     packages: 15,
     startingPrice: 1650,
@@ -57,7 +60,7 @@ const destinations = [
     id: "thailand",
     name: "Bangkok, Thailand",
     image:
-      "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
     description: "Land of smiles with beautiful beaches and temples",
     packages: 18,
     startingPrice: 1250,
@@ -73,7 +76,7 @@ const destinations = [
     id: "paris",
     name: "Paris, France",
     image:
-      "https://images.unsplash.com/photo-1502602898536-47ad22581b52?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&h=600&fit=crop",
     description: "The city of love, art, and timeless elegance",
     packages: 10,
     startingPrice: 2950,
@@ -89,7 +92,7 @@ const destinations = [
     id: "london",
     name: "London, UK",
     image:
-      "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1533929736992-db87c60e3e2c?w=800&h=600&fit=crop",
     description: "Historic landmarks, royal palaces, and modern attractions",
     packages: 14,
     startingPrice: 3150,
@@ -105,7 +108,7 @@ const destinations = [
     id: "singapore",
     name: "Singapore",
     image:
-      "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1512904521712-6f9a50b8c341?w=800&h=600&fit=crop",
     description: "Garden city with futuristic architecture and diverse culture",
     packages: 9,
     startingPrice: 1750,
@@ -120,7 +123,7 @@ const destinations = [
     id: "rome",
     name: "Rome, Italy",
     image:
-      "https://images.unsplash.com/photo-1552832230-c0197047daf1?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1566131537154-8d557ae60c57?w=800&h=600&fit=crop",
     description: "Eternal city with ancient history and Renaissance art",
     packages: 11,
     startingPrice: 2850,
@@ -130,7 +133,7 @@ const destinations = [
     id: "malaysia",
     name: "Kuala Lumpur, Malaysia",
     image:
-      "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&h=600&fit=crop",
     description: "Modern metropolis with cultural diversity and natural beauty",
     packages: 7,
     startingPrice: 1450,
@@ -144,7 +147,7 @@ const destinations = [
   {
     id: "baku",
     name: "Baku, Azerbaijan",
-    image: "/baku-azerbaijan.jpg",
+    image: "/baku1.jpg",
     description:
       "Vibrant blend of ancient heritage, modern architecture and Caspian Sea beauty",
     packages: 6,
@@ -185,7 +188,7 @@ export default function DestinationsPage() {
         {/* Hero Section */}
         <section className="relative h-96 bg-linear-to-r from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
           <Image
-            src="/hero-travel.jpg"
+            src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&h=800&fit=crop"
             alt="Explore destinations"
             fill
             className="object-cover absolute inset-0 opacity-40"
@@ -250,14 +253,14 @@ export default function DestinationsPage() {
         {/* Destinations Grid */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {destinations.map((destination) => (
                 <div
                   key={destination.id}
-                  className="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 overflow-hidden border border-gray-100"
+                  className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden border border-gray-100"
                 >
                   {/* Image Container */}
-                  <div className="relative h-72 overflow-hidden bg-linear-to-br from-cyan-400 to-blue-400">
+                  <div className="relative h-44 overflow-hidden bg-linear-to-br from-cyan-400 to-blue-400">
                     <Image
                       src={destination.image}
                       alt={destination.name}
@@ -281,27 +284,27 @@ export default function DestinationsPage() {
                   </div>
 
                   {/* Content */}
-                  <div className="p-7">
+                  <div className="p-4">
                     {/* Title */}
-                    <h3 className="text-2xl font-bold text-slate-800 mb-2 group-hover:text-cyan-600 transition-colors">
+                    <h3 className="text-lg font-bold text-slate-800 mb-1 group-hover:text-cyan-600 transition-colors">
                       {destination.name}
                     </h3>
 
                     {/* Description */}
-                    <p className="text-slate-600 text-sm mb-5 leading-relaxed line-clamp-2">
+                    <p className="text-slate-600 text-xs mb-3 leading-relaxed line-clamp-2">
                       {destination.description}
                     </p>
 
                     {/* Highlights */}
-                    <div className="mb-6">
-                      <h4 className="text-xs font-bold text-slate-700 mb-3 uppercase tracking-wide">
+                    <div className="mb-3">
+                      <h4 className="text-xs font-bold text-slate-700 mb-2 uppercase tracking-wide">
                         Top Attractions:
                       </h4>
-                      <div className="flex flex-wrap gap-2">
+                      <div className="flex flex-wrap gap-1.5">
                         {destination.highlights.map((highlight, index) => (
                           <span
                             key={index}
-                            className="text-xs bg-cyan-50 text-cyan-700 px-3 py-1 rounded-full font-medium border border-cyan-200 hover:bg-cyan-100 transition-colors"
+                            className="text-xs bg-cyan-50 text-cyan-700 px-2 py-0.5 rounded-full font-medium border border-cyan-200 hover:bg-cyan-100 transition-colors"
                           >
                             {highlight}
                           </span>
@@ -310,15 +313,15 @@ export default function DestinationsPage() {
                     </div>
 
                     {/* Divider */}
-                    <div className="border-t border-gray-200 my-6"></div>
+                    <div className="border-t border-gray-200 my-3"></div>
 
                     {/* Price and CTA */}
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className="text-xs text-slate-500 font-medium mb-1">
+                        <p className="text-xs text-slate-500 font-medium mb-0.5">
                           Starting from
                         </p>
-                        <p className="text-3xl font-bold text-cyan-600">
+                        <p className="text-lg font-bold text-cyan-600">
                           {formatPrice(
                             destination.startingPrice,
                             destination.currency || "$"
@@ -327,7 +330,7 @@ export default function DestinationsPage() {
                       </div>
                       <Link
                         href={`/packages/${destination.id}`}
-                        className="bg-linear-to-r from-cyan-600 to-cyan-700 hover:from-cyan-700 hover:to-cyan-800 text-white px-6 py-3 rounded-full font-bold transition-all duration-300 transform hover:scale-110 shadow-lg text-sm"
+                        className="bg-linear-to-r from-cyan-600 to-cyan-700 hover:from-cyan-700 hover:to-cyan-800 text-white px-3 py-2 rounded-full font-bold transition-all duration-300 transform hover:scale-110 shadow-lg text-xs"
                       >
                         Explore →
                       </Link>
@@ -340,120 +343,135 @@ export default function DestinationsPage() {
         </section>
 
         {/* World Cup CTA Section */}
-        <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden mt-12 mb-12 bg-linear-to-r from-cyan-700 via-cyan-600 to-cyan-700">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              {/* Left Content */}
-              <div className="text-white">
-                <div className="mb-4 inline-block bg-yellow-400 text-cyan-700 px-4 py-2 rounded-full text-sm font-bold">
-                  ✈️ EXCLUSIVE OFFER
-                </div>
-                <h2 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-                  Your Journey Beyond Nepal Awaits
-                </h2>
-                <p className="text-cyan-100 text-lg mb-6">
-                  Embark on unforgettable adventures with our premium travel
-                  packages worldwide.
-                </p>
-                <div className="space-y-4 mb-8">
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-md bg-yellow-400 text-cyan-700 font-bold flex items-center justify-center shrink-0">
-                      ✓
-                    </div>
-                    <div>
-                      <p className="font-semibold text-white">
-                        Premium Accommodations
-                      </p>
-                      <p className="text-cyan-100 text-sm">
-                        5-star luxury stays included
-                      </p>
-                    </div>
+        <section className="relative py-6 overflow-hidden mt-4 mb-4 bg-white group hover:shadow-2xl transition-all duration-500 cursor-pointer rounded-2xl border border-gray-100">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-6xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center transform group-hover:scale-105 transition-transform duration-500 origin-center">
+                {/* Left Content */}
+                <div className="text-slate-800">
+                  <div className="mb-1.5 inline-block bg-yellow-400 text-cyan-700 px-3 py-1 rounded-full text-xs font-bold">
+                    ✈️ EXCLUSIVE OFFER
                   </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-md bg-yellow-400 text-cyan-700 font-bold flex items-center justify-center shrink-0">
-                      ✓
-                    </div>
-                    <div>
-                      <p className="font-semibold text-white">
-                        Expert Guides & Support
-                      </p>
-                      <p className="text-cyan-100 text-sm">
-                        24/7 travel assistance
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-md bg-yellow-400 text-cyan-700 font-bold flex items-center justify-center shrink-0">
-                      ✓
-                    </div>
-                    <div>
-                      <p className="font-semibold text-white">
-                        All-Inclusive Packages
-                      </p>
-                      <p className="text-cyan-100 text-sm">
-                        Meals, tours & transfers
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="bg-orange-500 bg-opacity-20 border-l-4 border-orange-300 p-4 rounded">
-                  <p className="text-orange-200 font-semibold">
-                    ⏰ Early Bird Discount: Save 25% this month!
+                  <h2 className="text-lg md:text-xl font-bold mb-1.5 leading-tight">
+                    Your Journey Beyond Nepal Awaits
+                  </h2>
+                  <p className="text-slate-600 text-xs mb-2.5">
+                    Embark on unforgettable adventures with our premium travel
+                    packages worldwide.
                   </p>
+                  <div className="space-y-1.5 mb-3">
+                    <div className="flex items-start gap-2">
+                      <div className="w-5 h-5 rounded-md bg-yellow-400 text-cyan-700 font-bold flex items-center justify-center shrink-0 text-xs">
+                        ✓
+                      </div>
+                      <div>
+                        <p className="font-semibold text-slate-800 text-xs">
+                          Premium Accommodations
+                        </p>
+                        <p className="text-slate-600 text-xs">
+                          5-star luxury stays included
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <div className="w-5 h-5 rounded-md bg-yellow-400 text-cyan-700 font-bold flex items-center justify-center shrink-0 text-xs">
+                        ✓
+                      </div>
+                      <div>
+                        <p className="font-semibold text-slate-800 text-xs">
+                          Expert Guides & Support
+                        </p>
+                        <p className="text-slate-600 text-xs">
+                          24/7 travel assistance
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <div className="w-5 h-5 rounded-md bg-yellow-400 text-cyan-700 font-bold flex items-center justify-center shrink-0 text-xs">
+                        ✓
+                      </div>
+                      <div>
+                        <p className="font-semibold text-slate-800 text-xs">
+                          All-Inclusive Packages
+                        </p>
+                        <p className="text-slate-600 text-xs">
+                          Meals, tours & transfers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-orange-100 border-l-4 border-orange-400 p-2 rounded">
+                    <p className="text-orange-700 font-semibold text-xs">
+                      ⏰ Early Bird Discount: Save 25% this month!
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              {/* Right Card */}
-              <div className="relative">
-                <div className="bg-white rounded-3xl shadow-2xl p-8">
-                  <div className="absolute -top-4 right-6 bg-yellow-400 text-cyan-700 px-4 py-2 rounded-full font-bold text-sm shadow-lg">
-                    LIMITED SLOTS
-                  </div>
-                  <h3 className="text-3xl font-bold text-slate-800 mb-4">
-                    Premium Travel Pass
-                  </h3>
-                  <p className="text-slate-600 text-sm mb-6">
-                    Experience 3 destinations in one epic journey
-                  </p>
-                  <div className="bg-linear-to-r from-cyan-50 to-cyan-100 rounded-2xl p-6 mb-6">
-                    <p className="text-slate-600 text-sm mb-2">Starting from</p>
-                    <div className="flex items-baseline gap-2 mb-2">
-                      <span className="text-5xl font-bold text-cyan-600">
-                        $3,999
-                      </span>
-                      <span className="text-slate-400 line-through text-xl">
-                        $5,499
-                      </span>
+                {/* Right Card */}
+                <div className="relative transform group-hover:scale-110 transition-transform duration-500 origin-center">
+                  <div className="bg-white rounded-2xl shadow-xl p-4 group-hover:shadow-2xl transition-shadow duration-500 overflow-hidden relative">
+                    {/* Background Image - Trophy */}
+                    <div className="absolute inset-0 opacity-5 z-0">
+                      <img
+                        src="/trophy.jpg"
+                        alt="trophy background"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
-                    <p className="text-green-600 font-semibold text-sm">
-                      Save $1,500 (27% OFF)
-                    </p>
+                    {/* Card Content */}
+                    <div className="relative z-10">
+                      <div className="absolute -top-3 right-4 bg-yellow-400 text-cyan-700 px-3 py-1 rounded-full font-bold text-xs shadow-lg">
+                        LIMITED SLOTS
+                      </div>
+                      <h3 className="text-lg font-bold text-slate-800 mb-1.5">
+                        Premium Travel Pass
+                      </h3>
+                      <p className="text-slate-600 text-xs mb-3">
+                        Experience 3 destinations in one epic journey
+                      </p>
+                      <div className="bg-gray-50 rounded-xl p-3 mb-3 border border-gray-200">
+                        <p className="text-slate-600 text-xs mb-0.5">
+                          Starting from
+                        </p>
+                        <div className="flex items-baseline gap-2 mb-0.5">
+                          <span className="text-2xl font-bold text-cyan-600">
+                            $3,999
+                          </span>
+                          <span className="text-slate-400 line-through text-xs">
+                            $5,499
+                          </span>
+                        </div>
+                        <p className="text-green-600 font-semibold text-xs">
+                          Save $1,500 (27% OFF)
+                        </p>
+                      </div>
+                      <div className="mb-3 space-y-1 text-xs text-slate-700">
+                        <p className="flex items-center gap-2">
+                          <span className="text-cyan-600 font-bold">•</span> 12
+                          days / 11 nights luxury stay
+                        </p>
+                        <p className="flex items-center gap-2">
+                          <span className="text-cyan-600 font-bold">•</span> 3
+                          premium destination packages
+                        </p>
+                        <p className="flex items-center gap-2">
+                          <span className="text-cyan-600 font-bold">•</span> All
+                          meals & activities included
+                        </p>
+                        <p className="flex items-center gap-2">
+                          <span className="text-cyan-600 font-bold">•</span>{" "}
+                          Private airport transfers
+                        </p>
+                        <p className="flex items-center gap-2">
+                          <span className="text-cyan-600 font-bold">•</span>{" "}
+                          Travel insurance covered
+                        </p>
+                      </div>
+                      <button className="w-full bg-linear-to-r from-cyan-600 to-cyan-700 hover:from-cyan-700 hover:to-cyan-800 text-white px-4 py-2 rounded-lg font-bold text-xs transition-all duration-300 shadow-lg transform hover:scale-105">
+                        🎫 Book Your Journey Today!
+                      </button>
+                    </div>
                   </div>
-                  <div className="mb-8 space-y-3 text-sm text-slate-700">
-                    <p className="flex items-center gap-2">
-                      <span className="text-cyan-600 font-bold">•</span> 12 days
-                      / 11 nights luxury stay
-                    </p>
-                    <p className="flex items-center gap-2">
-                      <span className="text-cyan-600 font-bold">•</span> 3
-                      premium destination packages
-                    </p>
-                    <p className="flex items-center gap-2">
-                      <span className="text-cyan-600 font-bold">•</span> All
-                      meals & activities included
-                    </p>
-                    <p className="flex items-center gap-2">
-                      <span className="text-cyan-600 font-bold">•</span> Private
-                      airport transfers
-                    </p>
-                    <p className="flex items-center gap-2">
-                      <span className="text-cyan-600 font-bold">•</span> Travel
-                      insurance covered
-                    </p>
-                  </div>
-                  <button className="w-full bg-linear-to-r from-cyan-600 to-cyan-700 hover:from-cyan-700 hover:to-cyan-800 text-white px-6 py-4 rounded-xl font-bold text-lg transition-all duration-300 shadow-lg transform hover:scale-105">
-                    🎫 Book Your Journey Today!
-                  </button>
                 </div>
               </div>
             </div>

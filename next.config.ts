@@ -16,6 +16,8 @@ const nextConfig: NextConfig = {
         pathname: "/**",
       },
     ],
+    // Ensure local images from public folder are properly served
+    unoptimized: false,
   },
 };
 

@@ -5,6 +5,7 @@ import Hero from "@/components/sections/Hero";
 import Testimonials from "@/components/sections/Testimonials";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import { getAllPackages, getPackageById } from "@/lib/packages";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
         <Hero />
 
         {/* ICC World Cup Cricket 2026 CTA Section */}
-        <section className="relative py-6 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <section className="relative py-4 px-4 sm:px-6 lg:px-8 overflow-hidden">
           {/* Background Image */}
           <div className="absolute inset-0">
             <img
@@ -32,49 +33,51 @@ export default function Home() {
           </div>
 
           <div className="relative max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center mb-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center mb-4">
               {/* Left: Stadium Image */}
               <div className="relative hidden lg:block">
-                <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-yellow-400">
-                  <img
-                    src="/icc.jpg"
+                <div className="rounded-2xl overflow-hidden shadow-lg border-3 border-yellow-400">
+                  <Image
+                    src="/stadium.jpg"
                     alt="ICC World Cup Cricket 2026 - Cricket Stadium"
-                    className="w-full h-40 object-cover"
+                    width={600}
+                    height={400}
+                    className="w-full h-24 object-cover"
                   />
                 </div>
               </div>
 
               {/* Right: Content */}
               <div className="text-white">
-                <div className="mb-4 inline-block bg-linear-to-r from-yellow-400 to-amber-400 text-slate-900 px-4 py-1 rounded-full font-bold text-xs shadow-lg">
+                <div className="mb-2 inline-block bg-linear-to-r from-yellow-400 to-amber-400 text-slate-900 px-3 py-0.5 rounded-full font-bold text-xs shadow-lg">
                   🏏 LIMITED AVAILABILITY - BOOK NOW!
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold mb-2 leading-tight">
+                <h2 className="text-lg md:text-xl font-bold mb-1 leading-tight">
                   ICC World Cup Cricket 2026
                 </h2>
-                <p className="text-sm text-slate-100 mb-4 leading-relaxed hidden sm:block">
+                <p className="text-xs text-slate-100 mb-3 leading-relaxed hidden sm:block">
                   Experience the greatest cricket tournament on earth! Live
                   matches, premium seating, luxury 5-star hotels, and VIP
                   treatment.
                 </p>
 
-                <div className="space-y-2 mb-4">
-                  <div className="flex items-start gap-2 bg-white/10 backdrop-blur-sm p-2 rounded-lg border border-white/20 hidden sm:flex">
-                    <span className="text-yellow-400 text-xl font-bold shrink-0">
+                <div className="space-y-1 mb-3">
+                  <div className="hidden sm:flex items-start gap-2 bg-white/10 backdrop-blur-sm p-1.5 rounded-lg border border-white/20">
+                    <span className="text-yellow-400 text-sm font-bold shrink-0">
                       ✓
                     </span>
                     <div>
-                      <p className="font-bold text-white text-sm">
+                      <p className="font-bold text-white text-xs">
                         5 Premium Cricket Match Tickets
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-2 bg-white/10 backdrop-blur-sm p-2 rounded-lg border border-white/20">
-                    <span className="text-yellow-400 text-xl font-bold shrink-0">
+                  <div className="flex items-start gap-2 bg-white/10 backdrop-blur-sm p-1.5 rounded-lg border border-white/20">
+                    <span className="text-yellow-400 text-sm font-bold shrink-0">
                       ✓
                     </span>
                     <div>
-                      <p className="font-bold text-white text-sm">
+                      <p className="font-bold text-white text-xs">
                         Luxury Hotels & VIP Treatment
                       </p>
                     </div>
@@ -82,10 +85,10 @@ export default function Home() {
                 </div>
 
                 {/* Pricing */}
-                <div className="bg-linear-to-r from-yellow-400 to-amber-400 text-slate-900 rounded-xl p-4 mb-4">
+                <div className="bg-linear-to-r from-yellow-400 to-amber-400 text-slate-900 rounded-lg p-2.5 mb-3">
                   <p className="text-xs font-bold mb-0">PRICE PER PERSON</p>
                   <div className="flex items-baseline gap-2">
-                    <span className="text-3xl font-bold">Rs. 599,900</span>
+                    <span className="text-xl font-bold">Rs. 599,900</span>
                     <span className="text-xs line-through opacity-70 hidden sm:inline">
                       Rs. 899,900
                     </span>
@@ -93,9 +96,9 @@ export default function Home() {
                 </div>
 
                 {/* Buttons */}
-                <div className="flex flex-col sm:flex-row gap-2">
+                <div className="flex flex-col sm:flex-row gap-1.5">
                   <Link href="/packages/14" className="flex-1">
-                    <button className="w-full bg-linear-to-r from-yellow-400 to-amber-400 hover:from-yellow-500 hover:to-amber-500 text-slate-900 px-4 py-2 rounded-lg font-bold text-sm shadow-lg transform hover:scale-105 transition-all">
+                    <button className="w-full bg-linear-to-r from-yellow-400 to-amber-400 hover:from-yellow-500 hover:to-amber-500 text-slate-900 px-3 py-1.5 rounded-lg font-bold text-xs shadow-lg transform hover:scale-105 transition-all">
                       🎫 Book Now
                     </button>
                   </Link>
@@ -104,22 +107,22 @@ export default function Home() {
             </div>
 
             {/* Quick Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6 pt-6 border-t border-white/20">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-4 pt-4 border-t border-white/20">
               <div className="text-center">
-                <p className="text-2xl font-bold text-yellow-400">20</p>
-                <p className="text-slate-200 mt-1 text-xs">Teams</p>
+                <p className="text-lg font-bold text-yellow-400">20</p>
+                <p className="text-slate-200 mt-0.5 text-xs">Teams</p>
               </div>
               <div className="text-center">
-                <p className="text-2xl font-bold text-yellow-400">55</p>
-                <p className="text-slate-200 mt-1 text-xs">Matches</p>
+                <p className="text-lg font-bold text-yellow-400">55</p>
+                <p className="text-slate-200 mt-0.5 text-xs">Matches</p>
               </div>
               <div className="text-center">
-                <p className="text-2xl font-bold text-yellow-400">14</p>
-                <p className="text-slate-200 mt-1 text-xs">Days</p>
+                <p className="text-lg font-bold text-yellow-400">14</p>
+                <p className="text-slate-200 mt-0.5 text-xs">Days</p>
               </div>
               <div className="text-center">
-                <p className="text-2xl font-bold text-yellow-400">2026</p>
-                <p className="text-slate-200 mt-1 text-xs">ICC Cup</p>
+                <p className="text-lg font-bold text-yellow-400">2026</p>
+                <p className="text-slate-200 mt-0.5 text-xs">ICC Cup</p>
               </div>
             </div>
           </div>
@@ -148,86 +151,88 @@ export default function Home() {
                   </span>
                 </div>
 
-                <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                  {/* Package Image */}
-                  <div className="relative h-96 overflow-hidden">
-                    <img
-                      src={
-                        featuredPackage.id === 13
-                          ? "/world-cup-2026-stadium.jpg"
-                          : featuredPackage.id === 14
-                          ? "/cricket-world-cup-2026.svg"
-                          : "/icc.jpg"
-                      }
-                      alt={featuredPackage.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-linear-to-t from-slate-900/60 to-transparent"></div>
-                  </div>
+                <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                  <div className="lg:flex">
+                    {/* Package Image */}
+                    <div className="lg:w-1/2">
+                      <div className="relative h-32 lg:h-full">
+                        <img
+                          src={
+                            featuredPackage.id === 13
+                              ? "/world-cup-2026-stadium.jpg"
+                              : featuredPackage.id === 14
+                              ? "/cricket-world-cup-2026.svg"
+                              : "/icc.jpg"
+                          }
+                          alt={featuredPackage.title}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        />
+                      </div>
+                    </div>
 
-                  {/* Package Details */}
-                  <div className="p-8">
-                    <div className="flex items-start justify-between mb-4">
-                      <div>
-                        <p className="text-cyan-600 font-semibold text-sm mb-2">
+                    {/* Package Details */}
+                    <div className="lg:w-1/2 p-6 lg:p-8 flex flex-col justify-center">
+                      <div className="mb-3">
+                        <p className="text-cyan-600 font-semibold text-xs mb-2">
                           {featuredPackage.duration}
                         </p>
-                        <h3 className="text-3xl font-bold text-slate-900">
+                        <h3 className="text-2xl lg:text-3xl font-bold text-slate-900 mb-3 leading-tight">
                           {featuredPackage.title}
                         </h3>
+                        <p className="text-slate-600 mb-4 text-base leading-relaxed">
+                          {featuredPackage.description}
+                        </p>
                       </div>
-                    </div>
 
-                    <p className="text-slate-600 mb-6 text-lg">
-                      {featuredPackage.description}
-                    </p>
-
-                    {/* Highlights */}
-                    <div className="grid grid-cols-2 gap-4 mb-8">
-                      {featuredPackage.highlights
-                        .slice(0, 4)
-                        .map((highlight, idx) => (
-                          <div key={idx} className="flex items-center gap-2">
-                            <span className="text-yellow-500">✓</span>
-                            <span className="text-slate-600">{highlight}</span>
-                          </div>
-                        ))}
-                    </div>
-
-                    {/* Pricing */}
-                    <div className="mb-8 pb-8 border-b border-slate-200">
-                      <div className="flex items-baseline gap-3">
-                        <span className="text-3xl font-bold text-cyan-600">
-                          Rs. {featuredPackage.price.toLocaleString()}
-                        </span>
-                        {featuredPackage.originalPrice && (
-                          <>
-                            <span className="text-xl text-slate-400 line-through">
-                              Rs.{" "}
-                              {featuredPackage.originalPrice.toLocaleString()}
-                            </span>
-                            <span className="text-green-600 font-bold bg-green-50 px-3 py-1 rounded-lg">
-                              Save{" "}
-                              {Math.round(
-                                ((featuredPackage.originalPrice -
-                                  featuredPackage.price) /
-                                  featuredPackage.originalPrice) *
-                                  100
-                              )}
-                              %
-                            </span>
-                          </>
-                        )}
+                      {/* Highlights */}
+                      <div className="grid grid-cols-2 gap-2 mb-4">
+                        {featuredPackage.highlights
+                          .slice(0, 4)
+                          .map((highlight, idx) => (
+                            <div key={idx} className="flex items-center gap-2">
+                              <span className="text-yellow-500 text-sm">✓</span>
+                              <span className="text-slate-600 text-sm">
+                                {highlight}
+                              </span>
+                            </div>
+                          ))}
                       </div>
-                    </div>
 
-                    {/* CTA Button */}
-                    <Link
-                      href={`/packages/${featuredPackage.id}`}
-                      className="block w-full bg-linear-to-r from-cyan-600 to-cyan-500 hover:from-cyan-700 hover:to-cyan-600 text-white text-center py-4 rounded-xl font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-                    >
-                      Explore Package →
-                    </Link>
+                      {/* Pricing */}
+                      <div className="mb-4 pb-4 border-b border-slate-200">
+                        <div className="flex items-baseline gap-2">
+                          <span className="text-2xl font-bold text-cyan-600">
+                            Rs. {featuredPackage.price.toLocaleString()}
+                          </span>
+                          {featuredPackage.originalPrice && (
+                            <>
+                              <span className="text-base text-slate-400 line-through">
+                                Rs.{" "}
+                                {featuredPackage.originalPrice.toLocaleString()}
+                              </span>
+                              <span className="text-green-600 font-bold bg-green-50 px-3 py-1 rounded-lg text-sm">
+                                Save{" "}
+                                {Math.round(
+                                  ((featuredPackage.originalPrice -
+                                    featuredPackage.price) /
+                                    featuredPackage.originalPrice) *
+                                    100
+                                )}
+                                %
+                              </span>
+                            </>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* CTA Button */}
+                      <Link
+                        href={`/packages/${featuredPackage.id}`}
+                        className="inline-flex items-center gap-2 text-cyan-600 hover:text-cyan-700 font-semibold transition-colors"
+                      >
+                        Explore Package →
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>

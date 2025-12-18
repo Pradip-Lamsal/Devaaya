@@ -63,7 +63,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative h-screen w-full mb-10 overflow-hidden">
       {/* Background Images */}
       {destinations.map((destination, index) => (
         <div
