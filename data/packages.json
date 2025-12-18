@@ -499,6 +499,191 @@
         "advanceBooking": "5 days minimum",
         "cancellation": "Free cancellation up to 24 hours before departure"
       }
+    },
+    "13": {
+      "id": 13,
+      "image": "/baku-azerbaijan.jpg",
+      "destination": "Baku, Azerbaijan",
+      "title": "Baku City Explorer Package",
+      "duration": "4 Days, 3 Nights",
+      "price": 149900,
+      "originalPrice": 189900,
+      "rating": 4.8,
+      "reviews": 96,
+      "badge": "New Destination",
+      "currency": "Rs.",
+      "gallery": [
+        "/baku-azerbaijan.jpg",
+        "https://images.unsplash.com/photo-1578926314433-b374bda8a7e4?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1585859158688-64ba9d0c9f1e?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1583797014793-53fae2cb7a0f?w=800&h=600&fit=crop"
+      ],
+      "description": "Explore the vibrant capital of Azerbaijan - Baku! Experience a perfect blend of ancient heritage, modern architecture, and Caspian Sea beauty. From the UNESCO-listed Old City to the futuristic Flame Towers, Baku offers an unforgettable journey.",
+      "highlights": [
+        "Old City (Icherisheher) UNESCO World Heritage Site",
+        "Flame Towers & Modern Baku City Tour",
+        "Caspian Sea Beach Experience",
+        "Yanar Dag (Fire Mountain) Visit",
+        "4-star hotel with sea view",
+        "Professional local guide",
+        "All meals included",
+        "Airport transfers"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival & Old City Exploration",
+          "description": "Arrive at Heydar Aliyev International Airport and transfer to your 4-star hotel. After check-in, explore the enchanting Old City (Icherisheher) - a UNESCO World Heritage Site dating back to the 12th century. Enjoy traditional Azerbaijani dinner at a local restaurant."
+        },
+        {
+          "day": 2,
+          "title": "Modern Baku & Flame Towers",
+          "description": "Visit the iconic Flame Towers, Heydar Aliyev Center, and Crystal Hall. Explore the upscale Baku Boulevard along the Caspian Sea with panoramic views. Visit local bazaars for traditional crafts and souvenirs."
+        },
+        {
+          "day": 3,
+          "title": "Natural Wonders & Yanar Dag",
+          "description": "Day trip to Yanar Dag (Fire Mountain) - a hillside perpetually covered with natural gas fires. Visit Absheron Peninsula, mud volcanoes, and pristine beaches. Experience the unique natural phenomenon and local culture."
+        },
+        {
+          "day": 4,
+          "title": "Shopping & Departure",
+          "description": "Visit local markets and shopping centers for last-minute purchases. Enjoy a farewell meal with city views. Transfer to airport for departure."
+        }
+      ],
+      "inclusions": [
+        "3 nights 4-star hotel accommodation",
+        "Daily breakfast & dinners",
+        "Professional tour guide (English speaking)",
+        "All sightseeing as per itinerary",
+        "Transport in air-conditioned vehicle",
+        "Airport transfers",
+        "Monument entry fees",
+        "Welcome drink on arrival"
+      ],
+      "exclusions": [
+        "International flights",
+        "Visa fees",
+        "Travel insurance",
+        "Personal shopping",
+        "Activities not mentioned",
+        "Tips & gratuities",
+        "Lunch (own expense)"
+      ],
+      "bookingInfo": {
+        "availability": "March - November",
+        "minPax": 2,
+        "maxPax": 10,
+        "advanceBooking": "7 days minimum",
+        "cancellation": "Free cancellation up to 5 days before departure"
+      }
+    },
+    "14": {
+      "id": 14,
+      "image": "/world-cup-2026-stadium.jpg",
+      "destination": "USA (World Cup 2026)",
+      "title": "FIFA World Cup 2026 Ultimate Experience",
+      "duration": "10 Days, 9 Nights",
+      "price": 599900,
+      "originalPrice": 899900,
+      "rating": 5.0,
+      "reviews": 184,
+      "badge": "Mega Event",
+      "currency": "Rs.",
+      "gallery": [
+        "/world-cup-2026-stadium.jpg",
+        "https://images.unsplash.com/photo-1594694694105-e51b4c322657?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1517457373614-b7152f800fd1?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1461432264738-8021f6b56e0b?w=800&h=600&fit=crop"
+      ],
+      "description": "Live the ultimate football experience! Watch FIFA World Cup 2026 matches in the USA with premium seating, stay in 5-star hotels near stadiums, and explore exciting American cities. This is a once-in-a-lifetime sporting event with VIP treatment.",
+      "highlights": [
+        "3 Premium World Cup Match Tickets",
+        "5-star hotel accommodation",
+        "Hotels near World Cup stadiums",
+        "Daily buffet breakfast & dinners",
+        "Private transportation",
+        "Professional tour guide",
+        "Pre-match entertainment",
+        "Post-match celebrations"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival & Hotel Check-in",
+          "description": "Arrive at international airport in USA and transfer to your 5-star hotel located near one of the World Cup 2026 stadiums. Settle in and receive match tickets and tournament schedule briefing."
+        },
+        {
+          "day": 2,
+          "title": "First World Cup Match & City Tour",
+          "description": "Attend your first premium World Cup match in the evening. Before the match, enjoy a guided city tour of the stadium city with local attractions. Experience the electric atmosphere!"
+        },
+        {
+          "day": 3,
+          "title": "Rest Day & Entertainment",
+          "description": "Relax or explore the city. Visit local restaurants, shopping centers, and attractions. Evening entertainment and team analysis session with football experts."
+        },
+        {
+          "day": 4,
+          "title": "Second World Cup Match",
+          "description": "Attend your second premium World Cup match. Enjoy pre-match entertainment, VIP lounge access, and premium seating experience."
+        },
+        {
+          "day": 5,
+          "title": "Stadium Tour & Third Match",
+          "description": "Morning tour of one of the World Cup stadiums (behind-the-scenes). Afternoon rest and preparation. Evening attendance at third premium World Cup match."
+        },
+        {
+          "day": 6,
+          "title": "Inter-stadium Travel & Exploration",
+          "description": "Travel to another stadium city by private coach. Check into your second 5-star hotel near this stadium. Evening city exploration and dinner."
+        },
+        {
+          "day": 7,
+          "title": "Additional Match Experience",
+          "description": "Attend another exciting World Cup match. Explore the new city and interact with football fans from around the world."
+        },
+        {
+          "day": 8,
+          "title": "Cultural & Entertainment Day",
+          "description": "Day tour of local attractions, museums, and cultural sites. Evening entertainment, sports bar experience, and match analysis."
+        },
+        {
+          "day": 9,
+          "title": "Farewell & Departure",
+          "description": "Final shopping and leisure time. Attend farewell dinner celebrating World Cup memories. Late-night transfer to airport for departure."
+        }
+      ],
+      "inclusions": [
+        "9 nights 5-star hotel near stadiums",
+        "3 Premium World Cup Match Tickets",
+        "Daily buffet breakfast & dinners",
+        "Professional tour guide & translator",
+        "Private coach transportation",
+        "Airport transfers",
+        "Stadium tours",
+        "Welcome reception with cultural show",
+        "Pre-match meals",
+        "Post-match celebrations",
+        "Travel insurance coverage",
+        "World Cup merchandise"
+      ],
+      "exclusions": [
+        "International flights from Nepal",
+        "Visa processing fees",
+        "Additional match tickets",
+        "Alcoholic beverages",
+        "Personal shopping",
+        "Activities not mentioned",
+        "Tips & gratuities"
+      ],
+      "bookingInfo": {
+        "availability": "June - August 2026",
+        "minPax": 2,
+        "maxPax": 40,
+        "advanceBooking": "90 days minimum",
+        "cancellation": "Flexible cancellation policy - refund based on booking date"
+      }
     }
   }
 }

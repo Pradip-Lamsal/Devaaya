@@ -1,92 +1,17 @@
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
-import PackageCard from "@/components/packages/PackageCard";
 import BlogPreview from "@/components/sections/BlogPreview";
 import Hero from "@/components/sections/Hero";
 import Testimonials from "@/components/sections/Testimonials";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
-import TripFilter from "@/components/ui/TripFilter";
+import { getAllPackages, getPackageById } from "@/lib/packages";
 import Link from "next/link";
 
-// Sample package data
-const featuredPackages = [
-  {
-    id: 1,
-    image:
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&h=600&fit=crop",
-    destination: "Dubai, UAE",
-    title: "Dubai Luxury Experience",
-    duration: "5 Days, 4 Nights",
-    price: 1850,
-    originalPrice: 2200,
-    rating: 4.9,
-    reviews: 124,
-    highlights: [
-      "Burj Khalifa & Dubai Mall visit",
-      "Desert Safari with BBQ dinner",
-      "5-star hotel accommodation",
-      "Dubai Marina dhow cruise",
-    ],
-    badge: "Best Seller",
-  },
-  {
-    id: 2,
-    image:
-      "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=800&h=600&fit=crop",
-    destination: "Maldives",
-    title: "Maldives Honeymoon Paradise",
-    duration: "6 Days, 5 Nights",
-    price: 2850,
-    originalPrice: 3200,
-    rating: 5.0,
-    reviews: 89,
-    highlights: [
-      "Overwater villa with private pool",
-      "Underwater restaurant dining",
-      "Seaplane transfers included",
-      "Couples spa treatment",
-    ],
-    badge: "Romantic",
-  },
-  {
-    id: 3,
-    image:
-      "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=800&h=600&fit=crop",
-    destination: "Istanbul, Turkey",
-    title: "Turkey Cultural Discovery",
-    duration: "8 Days, 7 Nights",
-    price: 1650,
-    rating: 4.8,
-    reviews: 76,
-    highlights: [
-      "Hagia Sophia & Blue Mosque tours",
-      "Bosphorus cruise experience",
-      "Cappadocia hot air balloon",
-      "Turkish cuisine cooking class",
-    ],
-  },
-  {
-    id: 4,
-    image:
-      "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=800&h=600&fit=crop",
-    destination: "Bangkok, Thailand",
-    title: "Thailand Adventure Package",
-    duration: "7 Days, 6 Nights",
-    price: 1250,
-    originalPrice: 1450,
-    rating: 4.7,
-    reviews: 143,
-    highlights: [
-      "Bangkok temple tours",
-      "Phuket beach relaxation",
-      "Thai cooking class",
-      "Phi Phi Islands day trip",
-    ],
-    badge: "Adventure",
-  },
-];
-
 export default function Home() {
+  const packages = getAllPackages();
+  // Get Baku package (ID 13) as featured
+  const featuredPackage = getPackageById(13) || packages[0];
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -94,40 +19,230 @@ export default function Home() {
         {/* Hero Section */}
         <Hero />
 
-        {/* Trip Filter Section */}
-        <TripFilter />
+        {/* FIFA World Cup 2026 CTA Section */}
+        <section className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+          {/* Background Image - Using gradient fallback */}
+          <div className="absolute inset-0 bg-linear-to-r from-slate-900 via-slate-800 to-slate-900"></div>
 
-        {/* Featured Packages Section */}
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
-                Featured Travel Packages
-              </h2>
-              <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                Discover our most popular international destinations with
-                carefully crafted packages designed for Nepalese travelers.
+          <div className="relative max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+              {/* Left: Stadium Image */}
+              <div className="relative hidden lg:block">
+                <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-yellow-400 bg-linear-to-br from-slate-700 to-slate-800 h-96 flex items-center justify-center">
+                  <div className="text-center text-white">
+                    <span className="text-6xl">⚽</span>
+                    <p className="mt-4 font-bold text-lg">
+                      FIFA World Cup 2026
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right: Content */}
+              <div className="text-white">
+                <div className="mb-6 inline-block bg-linear-to-r from-yellow-400 to-amber-400 text-slate-900 px-6 py-2 rounded-full font-bold text-sm shadow-lg">
+                  ⚽ LIMITED AVAILABILITY - BOOK NOW!
+                </div>
+                <h2 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                  FIFA World Cup 2026
+                </h2>
+                <p className="text-xl text-slate-100 mb-8 leading-relaxed">
+                  Experience the greatest football tournament on earth! Live
+                  matches, premium seating, luxury 5-star hotels, and VIP
+                  treatment.
+                </p>
+
+                <div className="space-y-4 mb-10">
+                  <div className="flex items-start gap-4 bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20">
+                    <span className="text-yellow-400 text-3xl font-bold shrink-0">
+                      ✓
+                    </span>
+                    <div>
+                      <p className="font-bold text-white text-lg">
+                        3 Premium Match Tickets
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4 bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20">
+                    <span className="text-yellow-400 text-3xl font-bold shrink-0">
+                      ✓
+                    </span>
+                    <div>
+                      <p className="font-bold text-white text-lg">
+                        9 Nights 5-Star Hotels
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4 bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20">
+                    <span className="text-yellow-400 text-3xl font-bold shrink-0">
+                      ✓
+                    </span>
+                    <div>
+                      <p className="font-bold text-white text-lg">
+                        All-Inclusive Package
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4 bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20">
+                    <span className="text-yellow-400 text-3xl font-bold shrink-0">
+                      ✓
+                    </span>
+                    <div>
+                      <p className="font-bold text-white text-lg">
+                        Only 40 Spots Available
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Pricing */}
+                <div className="bg-linear-to-r from-yellow-400 to-amber-400 text-slate-900 rounded-2xl p-8 mb-8">
+                  <p className="text-sm font-bold mb-2">PRICE PER PERSON</p>
+                  <div className="flex items-baseline gap-3 mb-2">
+                    <span className="text-5xl font-bold">Rs. 599,900</span>
+                    <span className="text-2xl line-through opacity-70">
+                      Rs. 899,900
+                    </span>
+                  </div>
+                  <p className="font-bold text-lg">
+                    Save Rs. 300,000 (33% OFF!)
+                  </p>
+                </div>
+
+                {/* Buttons */}
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link href="/packages/14" className="flex-1">
+                    <button className="w-full bg-linear-to-r from-yellow-400 to-amber-400 hover:from-yellow-500 hover:to-amber-500 text-slate-900 px-8 py-4 rounded-xl font-bold text-lg shadow-lg transform hover:scale-105 transition-all">
+                      🎫 Book World Cup Package
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Quick Stats */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20 pt-16 border-t border-white/20">
+              <div className="text-center">
+                <p className="text-4xl font-bold text-yellow-400">32</p>
+                <p className="text-slate-200 mt-2">Teams Competing</p>
+              </div>
+              <div className="text-center">
+                <p className="text-4xl font-bold text-yellow-400">64</p>
+                <p className="text-slate-200 mt-2">Exciting Matches</p>
+              </div>
+              <div className="text-center">
+                <p className="text-4xl font-bold text-yellow-400">12</p>
+                <p className="text-slate-200 mt-2">Days Experience</p>
+              </div>
+              <div className="text-center">
+                <p className="text-4xl font-bold text-yellow-400">2026</p>
+                <p className="text-slate-200 mt-2">World Cup Year</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Featured Travel Package - with Popular Badge */}
+        <section className="py-24 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-slate-50 to-white">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-16">
+              <p className="text-cyan-600 font-semibold mb-2 uppercase tracking-wider">
+                Our Bestsellers
               </p>
+              <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+                Featured Travel Package
+              </h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
-              {featuredPackages.map((pkg) => (
-                <PackageCard key={pkg.id} {...pkg} />
-              ))}
-            </div>
+            {/* Featured Package Card with Popular Badge */}
+            {featuredPackage && (
+              <div className="relative group">
+                {/* Popular Badge - Red with Fire Icon - Top Right Corner */}
+                <div className="absolute -top-4 right-0 flex items-center gap-2 z-10">
+                  <span className="text-red-500 text-2xl">🔥</span>
+                  <span className="bg-red-500 text-white px-6 py-2 rounded-full font-bold text-lg shadow-lg">
+                    Popular
+                  </span>
+                </div>
 
-            <div className="text-center mt-12">
-              <Link href="/packages">
-                <button
-                  className="text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:brightness-110"
-                  style={{
-                    background: "linear-gradient(to right, #2D6E89, #245566)",
-                  }}
-                >
-                  View All Packages
-                </button>
-              </Link>
-            </div>
+                <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                  {/* Package Image */}
+                  <div className="relative h-96 overflow-hidden bg-linear-to-br from-cyan-500 to-blue-600 flex items-center justify-center">
+                    <div className="text-center text-white">
+                      <span className="text-7xl">✈️</span>
+                      <p className="mt-4 font-bold text-2xl">
+                        {featuredPackage.destination || "Baku"}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Package Details */}
+                  <div className="p-8">
+                    <div className="flex items-start justify-between mb-4">
+                      <div>
+                        <p className="text-cyan-600 font-semibold text-sm mb-2">
+                          {featuredPackage.duration}
+                        </p>
+                        <h3 className="text-3xl font-bold text-slate-900">
+                          {featuredPackage.title}
+                        </h3>
+                      </div>
+                    </div>
+
+                    <p className="text-slate-600 mb-6 text-lg">
+                      {featuredPackage.description}
+                    </p>
+
+                    {/* Highlights */}
+                    <div className="grid grid-cols-2 gap-4 mb-8">
+                      {featuredPackage.highlights
+                        .slice(0, 4)
+                        .map((highlight, idx) => (
+                          <div key={idx} className="flex items-center gap-2">
+                            <span className="text-yellow-500">✓</span>
+                            <span className="text-slate-600">{highlight}</span>
+                          </div>
+                        ))}
+                    </div>
+
+                    {/* Pricing */}
+                    <div className="mb-8 pb-8 border-b border-slate-200">
+                      <div className="flex items-baseline gap-3">
+                        <span className="text-3xl font-bold text-cyan-600">
+                          Rs. {featuredPackage.price.toLocaleString()}
+                        </span>
+                        {featuredPackage.originalPrice && (
+                          <>
+                            <span className="text-xl text-slate-400 line-through">
+                              Rs.{" "}
+                              {featuredPackage.originalPrice.toLocaleString()}
+                            </span>
+                            <span className="text-green-600 font-bold bg-green-50 px-3 py-1 rounded-lg">
+                              Save{" "}
+                              {Math.round(
+                                ((featuredPackage.originalPrice -
+                                  featuredPackage.price) /
+                                  featuredPackage.originalPrice) *
+                                  100
+                              )}
+                              %
+                            </span>
+                          </>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* CTA Button */}
+                    <Link
+                      href={`/packages/${featuredPackage.id}`}
+                      className="block w-full bg-linear-to-r from-cyan-600 to-cyan-500 hover:from-cyan-700 hover:to-cyan-600 text-white text-center py-4 rounded-xl font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                    >
+                      Explore Package →
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </section>
 
@@ -141,13 +256,7 @@ export default function Home() {
         <BlogPreview />
 
         {/* CTA Section */}
-        <section
-          className="py-20 text-white"
-          style={{
-            background:
-              "linear-gradient(135deg, #2D6E89 0%, #245566 50%, #1e4654 100%)",
-          }}
-        >
+        <section className="py-20 bg-linear-to-r from-cyan-600 to-cyan-700 text-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
               Ready to Start Your Journey?
@@ -158,19 +267,11 @@ export default function Home() {
               offers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <button
-                className="bg-white text-cyan-600 hover:bg-slate-100 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
-                style={{ color: "#2D6E89" }}
-              >
+              <button className="bg-white text-cyan-600 hover:bg-slate-100 px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg">
                 Get Free Consultation
               </button>
-              <button
-                className="border-2 border-white text-white hover:bg-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300"
-                style={
-                  { "--hover-text-color": "#2D6E89" } as React.CSSProperties
-                }
-              >
-                Call +977-1-4123456
+              <button className="border-2 border-white text-white hover:bg-white hover:text-cyan-600 px-8 py-4 rounded-full text-lg font-bold transition-all duration-300">
+                📞 Call +977-1-5555555
               </button>
             </div>
           </div>
