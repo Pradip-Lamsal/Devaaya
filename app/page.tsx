@@ -174,7 +174,7 @@ export default function Home() {
                 <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
                   {/* Package Image */}
                   <div className="relative h-96 overflow-hidden">
-                    <img 
+                    <img
                       src={
                         featuredPackage.id === 13
                           ? "/dubai-luxury.jpg"
