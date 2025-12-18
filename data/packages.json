@@ -603,158 +603,184 @@
     },
     "14": {
       "id": 14,
-      "image": "/world-cup-2026-stadium.jpg",
-      "destination": "USA (World Cup 2026)",
-      "title": "FIFA World Cup 2026 Ultimate Experience",
-      "duration": "10 Days, 9 Nights",
-      "price": 599900,
-      "originalPrice": 899900,
+      "image": "/cricket-world-cup-2026.svg",
+      "destination": "India (Cricket World Cup 2026)",
+      "title": "ICC Cricket World Cup 2026 Ultimate Experience",
+      "duration": "12 Days, 11 Nights",
+      "price": 449900,
+      "originalPrice": 699900,
       "rating": 5.0,
-      "reviews": 184,
+      "reviews": 156,
       "badge": "Mega Event",
       "currency": "Rs.",
       "gallery": [
-        "/world-cup-2026-stadium.jpg",
-        "https://images.unsplash.com/photo-1594694694105-e51b4c322657?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1517457373614-b7152f800fd1?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1461432264738-8021f6b56e0b?w=800&h=600&fit=crop"
+        "/cricket-world-cup-2026.svg",
+        "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1624526267942-ab7cb9ae2e68?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1540747913ee8a319fd92362f29352ebf?w=800&h=600&fit=crop"
       ],
-      "description": "Live the ultimate football experience! Watch FIFA World Cup 2026 matches in the USA with premium seating, stay in 5-star hotels near stadiums, and explore exciting American cities. This is a once-in-a-lifetime sporting event with VIP treatment.",
+      "description": "Experience cricket's greatest spectacle! Watch the ICC Men's Cricket World Cup 2026 in India with premium seating, stay in luxury hotels near stadiums, and witness the finals at the iconic Narendra Modi Stadium in Ahmedabad. This is a once-in-a-lifetime opportunity to be part of cricket history.",
       "highlights": [
-        "3 Premium World Cup Match Tickets",
-        "5-star hotel accommodation",
-        "Hotels near World Cup stadiums",
-        "Daily buffet breakfast & dinners",
-        "Private transportation",
-        "Professional tour guide",
-        "Pre-match entertainment",
-        "Post-match celebrations"
+        "3 Premium World Cup Match Tickets (including Finals)",
+        "Luxury 5-star hotel accommodation",
+        "Hotels near cricket stadiums",
+        "Daily breakfast & dinners",
+        "Private air-conditioned transportation",
+        "Professional cricket expert guide",
+        "Stadium tours & behind-the-scenes access",
+        "Welcome reception & cultural show"
       ],
       "itinerary": [
         {
           "day": 1,
-          "title": "Arrival & Hotel Check-in",
+          "title": "Arrival in India & Hotel Check-in",
           "activities": [
             "Airport arrival & pickup",
-            "Hotel check-in near stadium",
-            "Match tickets briefing",
-            "Tournament schedule review",
-            "Welcome dinner"
+            "Hotel check-in (luxury 5-star)",
+            "World Cup briefing session",
+            "Welcome dinner & team introduction"
           ]
         },
         {
           "day": 2,
           "title": "First World Cup Match & City Tour",
           "activities": [
-            "City tour of stadium city",
-            "Visit local attractions",
-            "Attend premium match evening",
-            "Experience electric atmosphere"
+            "Morning city tour",
+            "Visit local cricket academy",
+            "Attend premium match in evening",
+            "Meet cricket legends"
           ]
         },
         {
           "day": 3,
-          "title": "Rest Day & Entertainment",
+          "title": "Rest Day & Indian Culture",
           "activities": [
-            "Explore the city",
-            "Visit local restaurants",
-            "Shopping centers visit",
-            "Evening entertainment session",
-            "Team analysis discussion"
+            "Explore local markets",
+            "Visit historical monuments",
+            "Indian cooking class",
+            "Evening entertainment"
           ]
         },
         {
           "day": 4,
           "title": "Second World Cup Match",
           "activities": [
-            "Pre-match entertainment",
             "VIP lounge access",
             "Premium match attendance",
-            "Post-match celebrations"
+            "Post-match celebrations",
+            "Networking with cricket fans"
           ]
         },
         {
           "day": 5,
-          "title": "Stadium Tour & Third Match",
+          "title": "Stadium Tour & Analysis",
           "activities": [
             "Behind-the-scenes stadium tour",
-            "Afternoon rest & preparation",
-            "Attend third match evening",
-            "Premium seating experience"
+            "Cricket museum visit",
+            "Expert analysis session",
+            "Evening relaxation"
           ]
         },
         {
           "day": 6,
-          "title": "Inter-stadium Travel & Exploration",
+          "title": "Travel to Finals Venue",
           "activities": [
-            "Travel by private coach",
-            "Check into second hotel",
-            "City exploration",
-            "Dinner at new location"
+            "Travel to Ahmedabad",
+            "Check into luxury hotel",
+            "Narendra Modi Stadium tour",
+            "Dinner at premium restaurant"
           ]
         },
         {
           "day": 7,
-          "title": "Additional Match Experience",
+          "title": "Quarter-Final Match Experience",
           "activities": [
-            "Attend exciting match",
-            "Explore new city",
-            "Interact with global fans",
-            "Local restaurant experience"
+            "Explore Ahmedabad city",
+            "VIP match attendance",
+            "Premium seating experience",
+            "Post-match celebrations"
           ]
         },
         {
           "day": 8,
-          "title": "Cultural & Entertainment Day",
+          "title": "Semi-Final & Cultural Day",
           "activities": [
-            "Visit local museums",
-            "Cultural site tours",
-            "Sports bar experience",
-            "Match analysis session",
-            "Evening entertainment"
+            "Visit Sabarmati Ashram",
+            "Cultural heritage tour",
+            "Semi-final match attendance",
+            "Live commentary experience"
           ]
         },
         {
           "day": 9,
-          "title": "Farewell & Departure",
+          "title": "Grand Finals Day - Cricket History",
           "activities": [
-            "Final shopping",
-            "Farewell dinner",
-            "World Cup memory celebration",
+            "Finals preparation & briefing",
+            "VIP early entry to stadium",
+            "Premium finals match tickets",
+            "Witness cricket's greatest moment"
+          ]
+        },
+        {
+          "day": 10,
+          "title": "Finals Post-Match & Celebration",
+          "activities": [
+            "Celebrate champion's victory",
+            "Meet cricket analysts",
+            "Awards ceremony attendance",
+            "Gala dinner celebration"
+          ]
+        },
+        {
+          "day": 11,
+          "title": "Leisure & Shopping",
+          "activities": [
+            "Rest & recovery day",
+            "Local shopping & souvenirs",
+            "Spa & wellness session",
+            "Farewell dinner"
+          ]
+        },
+        {
+          "day": 12,
+          "title": "Departure",
+          "activities": [
             "Hotel checkout",
-            "Airport transfer"
+            "Airport transfer",
+            "Last-minute shopping",
+            "Departure to Nepal"
           ]
         }
       ],
       "includes": [
-        "9 nights 5-star hotel near stadiums",
-        "3 Premium World Cup Match Tickets",
-        "Daily buffet breakfast & dinners",
-        "Professional tour guide & translator",
-        "Private coach transportation",
-        "Airport transfers",
-        "Stadium tours",
+        "11 nights luxury 5-star hotel accommodation",
+        "3 Premium World Cup Match Tickets (including Finals)",
+        "All matches as per itinerary",
+        "Daily breakfast & dinners",
+        "Professional cricket expert guide",
+        "Private air-conditioned coach transportation",
+        "Airport & stadium transfers",
+        "Stadium tours & behind-the-scenes access",
         "Welcome reception with cultural show",
-        "Pre-match meals",
-        "Post-match celebrations",
+        "Cricket expert analysis sessions",
         "Travel insurance coverage",
-        "World Cup merchandise"
+        "World Cup merchandise & memorabilia"
       ],
       "excludes": [
         "International flights from Nepal",
-        "Visa processing fees",
-        "Additional match tickets",
+        "Indian visa processing fees",
+        "Additional match tickets beyond package",
         "Alcoholic beverages",
-        "Personal shopping",
-        "Activities not mentioned",
+        "Personal shopping & extras",
+        "Activities not mentioned in itinerary",
         "Tips & gratuities"
       ],
       "bookingInfo": {
-        "availability": "June - August 2026",
+        "availability": "February - June 2026",
         "minPax": 2,
-        "maxPax": 40,
-        "advanceBooking": "90 days minimum",
-        "cancellation": "Flexible cancellation policy - refund based on booking date"
+        "maxPax": 30,
+        "advanceBooking": "120 days minimum",
+        "cancellation": "Flexible cancellation policy with refunds based on booking date"
       }
     }
   }

@@ -19,107 +19,84 @@ export default function Home() {
         {/* Hero Section */}
         <Hero />
 
-        {/* FIFA World Cup 2026 CTA Section */}
-        <section className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        {/* ICC World Cup Cricket 2026 CTA Section */}
+        <section className="relative py-6 px-4 sm:px-6 lg:px-8 overflow-hidden">
           {/* Background Image */}
           <div className="absolute inset-0">
             <img
-              src="/dubai-luxury.jpg"
-              alt="FIFA World Cup 2026 Stadium"
+              src="/icc.jpg"
+              alt="ICC Cricket World Cup 2026 Stadium"
               className="w-full h-full object-cover opacity-30"
             />
             <div className="absolute inset-0 bg-linear-to-r from-slate-900/90 via-slate-900/80 to-slate-900/70"></div>
           </div>
 
           <div className="relative max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center mb-6">
               {/* Left: Stadium Image */}
               <div className="relative hidden lg:block">
                 <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-yellow-400">
                   <img
-                    src="/maldives-paradise.jpg"
-                    alt="FIFA World Cup 2026 - Football Stadium"
-                    className="w-full h-96 object-cover"
+                    src="/icc.jpg"
+                    alt="ICC World Cup Cricket 2026 - Cricket Stadium"
+                    className="w-full h-40 object-cover"
                   />
                 </div>
               </div>
 
               {/* Right: Content */}
               <div className="text-white">
-                <div className="mb-6 inline-block bg-linear-to-r from-yellow-400 to-amber-400 text-slate-900 px-6 py-2 rounded-full font-bold text-sm shadow-lg">
-                  ⚽ LIMITED AVAILABILITY - BOOK NOW!
+                <div className="mb-4 inline-block bg-linear-to-r from-yellow-400 to-amber-400 text-slate-900 px-4 py-1 rounded-full font-bold text-xs shadow-lg">
+                  🏏 LIMITED AVAILABILITY - BOOK NOW!
                 </div>
-                <h2 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                  FIFA World Cup 2026
+                <h2 className="text-2xl md:text-3xl font-bold mb-2 leading-tight">
+                  ICC World Cup Cricket 2026
                 </h2>
-                <p className="text-xl text-slate-100 mb-8 leading-relaxed">
-                  Experience the greatest football tournament on earth! Live
+                <p className="text-sm text-slate-100 mb-4 leading-relaxed hidden sm:block">
+                  Experience the greatest cricket tournament on earth! Live
                   matches, premium seating, luxury 5-star hotels, and VIP
                   treatment.
                 </p>
 
-                <div className="space-y-4 mb-10">
-                  <div className="flex items-start gap-4 bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20">
-                    <span className="text-yellow-400 text-3xl font-bold shrink-0">
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-start gap-2 bg-white/10 backdrop-blur-sm p-2 rounded-lg border border-white/20 hidden sm:flex">
+                    <span className="text-yellow-400 text-xl font-bold shrink-0">
                       ✓
                     </span>
                     <div>
-                      <p className="font-bold text-white text-lg">
-                        3 Premium Match Tickets
+                      <p className="font-bold text-white text-sm">
+                        5 Premium Cricket Match Tickets
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4 bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20">
-                    <span className="text-yellow-400 text-3xl font-bold shrink-0">
+                  <div className="flex items-start gap-2 bg-white/10 backdrop-blur-sm p-2 rounded-lg border border-white/20">
+                    <span className="text-yellow-400 text-xl font-bold shrink-0">
                       ✓
                     </span>
                     <div>
-                      <p className="font-bold text-white text-lg">
-                        9 Nights 5-Star Hotels
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4 bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20">
-                    <span className="text-yellow-400 text-3xl font-bold shrink-0">
-                      ✓
-                    </span>
-                    <div>
-                      <p className="font-bold text-white text-lg">
-                        All-Inclusive Package
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4 bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20">
-                    <span className="text-yellow-400 text-3xl font-bold shrink-0">
-                      ✓
-                    </span>
-                    <div>
-                      <p className="font-bold text-white text-lg">
-                        Only 40 Spots Available
+                      <p className="font-bold text-white text-sm">
+                        Luxury Hotels & VIP Treatment
                       </p>
                     </div>
                   </div>
                 </div>
 
                 {/* Pricing */}
-                <div className="bg-linear-to-r from-yellow-400 to-amber-400 text-slate-900 rounded-2xl p-8 mb-8">
-                  <p className="text-sm font-bold mb-2">PRICE PER PERSON</p>
-                  <div className="flex items-baseline gap-3 mb-2">
-                    <span className="text-5xl font-bold">Rs. 599,900</span>
-                    <span className="text-2xl line-through opacity-70">
+                <div className="bg-linear-to-r from-yellow-400 to-amber-400 text-slate-900 rounded-xl p-4 mb-4">
+                  <p className="text-xs font-bold mb-0">PRICE PER PERSON</p>
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-3xl font-bold">Rs. 599,900</span>
+                    <span className="text-xs line-through opacity-70 hidden sm:inline">
                       Rs. 899,900
                     </span>
                   </div>
-                  <p className="font-bold text-lg">
-                    Save Rs. 300,000 (33% OFF!)
-                  </p>
                 </div>
 
                 {/* Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-2">
                   <Link href="/packages/14" className="flex-1">
-                    <button className="w-full bg-linear-to-r from-yellow-400 to-amber-400 hover:from-yellow-500 hover:to-amber-500 text-slate-900 px-8 py-4 rounded-xl font-bold text-lg shadow-lg transform hover:scale-105 transition-all">
-                      🎫 Book World Cup Package
+                    <button className="w-full bg-linear-to-r from-yellow-400 to-amber-400 hover:from-yellow-500 hover:to-amber-500 text-slate-900 px-4 py-2 rounded-lg font-bold text-sm shadow-lg transform hover:scale-105 transition-all">
+                      🎫 Book Now
                     </button>
                   </Link>
                 </div>
@@ -127,22 +104,22 @@ export default function Home() {
             </div>
 
             {/* Quick Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20 pt-16 border-t border-white/20">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6 pt-6 border-t border-white/20">
               <div className="text-center">
-                <p className="text-4xl font-bold text-yellow-400">32</p>
-                <p className="text-slate-200 mt-2">Teams Competing</p>
+                <p className="text-2xl font-bold text-yellow-400">20</p>
+                <p className="text-slate-200 mt-1 text-xs">Teams</p>
               </div>
               <div className="text-center">
-                <p className="text-4xl font-bold text-yellow-400">64</p>
-                <p className="text-slate-200 mt-2">Exciting Matches</p>
+                <p className="text-2xl font-bold text-yellow-400">55</p>
+                <p className="text-slate-200 mt-1 text-xs">Matches</p>
               </div>
               <div className="text-center">
-                <p className="text-4xl font-bold text-yellow-400">12</p>
-                <p className="text-slate-200 mt-2">Days Experience</p>
+                <p className="text-2xl font-bold text-yellow-400">14</p>
+                <p className="text-slate-200 mt-1 text-xs">Days</p>
               </div>
               <div className="text-center">
-                <p className="text-4xl font-bold text-yellow-400">2026</p>
-                <p className="text-slate-200 mt-2">World Cup Year</p>
+                <p className="text-2xl font-bold text-yellow-400">2026</p>
+                <p className="text-slate-200 mt-1 text-xs">ICC Cup</p>
               </div>
             </div>
           </div>
@@ -177,10 +154,10 @@ export default function Home() {
                     <img
                       src={
                         featuredPackage.id === 13
-                          ? "/dubai-luxury.jpg"
+                          ? "/world-cup-2026-stadium.jpg"
                           : featuredPackage.id === 14
-                          ? "/maldives-paradise.jpg"
-                          : "/istanbul-heritage.jpg"
+                          ? "/cricket-world-cup-2026.svg"
+                          : "/icc.jpg"
                       }
                       alt={featuredPackage.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
