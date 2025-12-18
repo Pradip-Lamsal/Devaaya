@@ -21,20 +21,26 @@ export default function Home() {
 
         {/* FIFA World Cup 2026 CTA Section */}
         <section className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
-          {/* Background Image - Using gradient fallback */}
-          <div className="absolute inset-0 bg-linear-to-r from-slate-900 via-slate-800 to-slate-900"></div>
+          {/* Background Image */}
+          <div className="absolute inset-0">
+            <img
+              src="/dubai-luxury.jpg"
+              alt="FIFA World Cup 2026 Stadium"
+              className="w-full h-full object-cover opacity-30"
+            />
+            <div className="absolute inset-0 bg-linear-to-r from-slate-900/90 via-slate-900/80 to-slate-900/70"></div>
+          </div>
 
           <div className="relative max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
               {/* Left: Stadium Image */}
               <div className="relative hidden lg:block">
-                <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-yellow-400 bg-linear-to-br from-slate-700 to-slate-800 h-96 flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <span className="text-6xl">⚽</span>
-                    <p className="mt-4 font-bold text-lg">
-                      FIFA World Cup 2026
-                    </p>
-                  </div>
+                <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-yellow-400">
+                  <img
+                    src="/maldives-paradise.jpg"
+                    alt="FIFA World Cup 2026 - Football Stadium"
+                    className="w-full h-96 object-cover"
+                  />
                 </div>
               </div>
 
@@ -167,13 +173,19 @@ export default function Home() {
 
                 <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
                   {/* Package Image */}
-                  <div className="relative h-96 overflow-hidden bg-linear-to-br from-cyan-500 to-blue-600 flex items-center justify-center">
-                    <div className="text-center text-white">
-                      <span className="text-7xl">✈️</span>
-                      <p className="mt-4 font-bold text-2xl">
-                        {featuredPackage.destination || "Baku"}
-                      </p>
-                    </div>
+                  <div className="relative h-96 overflow-hidden">
+                    <img 
+                      src={
+                        featuredPackage.id === 13
+                          ? "/dubai-luxury.jpg"
+                          : featuredPackage.id === 14
+                          ? "/maldives-paradise.jpg"
+                          : "/istanbul-heritage.jpg"
+                      }
+                      alt={featuredPackage.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-linear-to-t from-slate-900/60 to-transparent"></div>
                   </div>
 
                   {/* Package Details */}
